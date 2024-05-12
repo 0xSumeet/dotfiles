@@ -1,3 +1,4 @@
+-- Code Formatting, Install stylua and gofumpt from formater section from :Mason
 return {
   "nvimtools/none-ls.nvim",
   config = function()
@@ -6,6 +7,7 @@ return {
     null_ls.setup({
       sources = {
         null_ls.builtins.formatting.stylua,
+        null_ls.builtins.formatting.gofumpt,
       }
     })
     vim.keymap.set('n', '<leader>gf', vim.lsp.buf.format, {})
