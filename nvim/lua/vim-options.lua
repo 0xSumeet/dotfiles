@@ -18,3 +18,9 @@ vim.cmd("vnoremap K :m '<-2<CR>gv=gv")
 vim.cmd("vnoremap J :m '>+1<CR>gv=gv")
 
 
+--commenting lines in vim
+vim.cmd("vnoremap <leader>c :'<,'>norm i//<CR>")
+-- uncomment the lines
+vim.cmd("vnoremap <leader>u :'<,'>norm xx<CR>")
+
+
